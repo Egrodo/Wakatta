@@ -1,0 +1,80 @@
+.svgContainer {
+  background: #131518;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+}
+
+.svgRoot {
+  background: #202020;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#patt1 path {
+  stroke: #ff509e;
+}
+
+#patt2 path {
+  stroke: #95d13c;
+}
+
+#patt3 path {
+  stroke: #00b6cb;
+}
+
+#patt4 path {
+  stroke: #9753e1;
+}
+
+#mask1 rect {
+  -webkit-animation: pulse 1.90476s infinite;
+  animation: pulse 1.90476s infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+#mask2 rect {
+  x: 10;
+  -webkit-animation: pulse 1.90476s infinite 0.47619s;
+  animation: pulse 1.90476s infinite 0.47619s;
+  -webkit-animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+#squiggle1,
+#squiggle2,
+#squiggle3,
+#squiggle4 {
+  background-blend-mode: multiply;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    x: 10;
+  }
+  50% {
+    x: -20;
+  }
+  100% {
+    x: -50;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    x: 10;
+  }
+  50% {
+    x: -20;
+  }
+  100% {
+    x: -50;
+  }
+}
