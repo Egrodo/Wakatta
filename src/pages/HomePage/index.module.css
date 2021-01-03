@@ -38,14 +38,21 @@ header > h2 > a {
   flex: 1 1 auto;
 }
 
-.btnContainer {
+.IntroView {
   flex-flow: column;
   flex: 0 1 auto;
   display: flex;
   height: 100%;
 }
 
-.bottomBtnContainer {
+.CreateGameView {
+  flex-flow: column;
+  flex: 0 1 auto;
+  display: flex;
+  height: 100%;
+}
+
+.floatBottom {
   align-self: end;
   margin-top: auto;
   width: 100%;

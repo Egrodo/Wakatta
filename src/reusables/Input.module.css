@@ -1,0 +1,32 @@
+.Input {
+  display: flex;
+  flex-flow: column;
+}
+
+.label {
+  width: 100%;
+  text-align: left;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.inputContainer {
+  background: var(--white-opaque);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.input {
+  outline: none;
+  background: transparent;
+  padding: 0;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  width: 100%;
+  color: white;
+  border-radius: 0;
+  border: none;
+  padding-bottom: 5px;
+  border-bottom: 3px solid white;
+}
