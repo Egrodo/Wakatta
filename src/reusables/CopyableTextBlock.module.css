@@ -1,4 +1,4 @@
-.button {
+.textBtn {
   background: var(--white-opaque);
   border-radius: 10px;
   outline: none;
@@ -7,6 +7,14 @@
   margin: 0;
   width: 100%;
   color: white;
-  font-size: 2rem;
+  font-size: 1.35rem;
   cursor: pointer;
+}
+
+.label {
+  width: 100%;
+  text-align: left;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  color: white;
 }

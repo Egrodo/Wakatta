@@ -20,7 +20,7 @@ type PropTypes = {
 
 function Input(props: PropTypes) {
   return (
-    <div className={css.Input}>
+    <div className={css.Input} style={props.containerStyles}>
       {props.hasOwnProperty('label') && (
         <span className={css.label}>{props.label}</span>
       )}
@@ -30,6 +30,7 @@ function Input(props: PropTypes) {
           onChange={props.onChange}
           value={props.value}
           autoFocus={props.autoFocus}
+          style={props.inputStyles}
           {...(props.hasOwnProperty('placeholder')
             ? { placeholder: props.placeholder }
             : {})}

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import IntroView from './IntroView';
 import CreateGameView from './CreateGameView';
+import JoinGameView from './JoinGameView';
+import PendingGameView from './PendingGameView';
 
 import css from './index.module.css';
 
@@ -15,6 +17,8 @@ function HomePage() {
     {
       IntroView: IntroView,
       CreateGameView: CreateGameView,
+      JoinGameView: JoinGameView,
+      PendingGameView: PendingGameView,
     }[displayedView] ?? IntroView;
 
   return (

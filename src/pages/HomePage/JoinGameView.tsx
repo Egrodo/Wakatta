@@ -7,35 +7,39 @@ type PropTypes = {
   setDisplayedView: (string) => void;
 };
 
-function CreateGameView(props: PropTypes) {
+function JoinGameView(props: PropTypes) {
   const [inputtedName, setInputtedName] = useState('');
+  const [roomid, setRoomid] = useState('');
 
   function onNameChange(event: React.ChangeEvent<HTMLInputElement>) {
     setInputtedName(event.target.value);
   }
 
-  function createGameClick() {
-    // TODO: serverstuffs
-    props.setDisplayedView('PendingGameView');
+  function onRoomidChange(event: React.ChangeEvent<HTMLInputElement>) {
+    setRoomid(event.target.value);
   }
+
+  function joinGameClick() {}
 
   function backClick() {
     props.setDisplayedView('IntroView');
   }
 
   return (
-    <div className={css.CreateGameView}>
+    <div className={css.JoinGameView}>
       <Input
         onChange={onNameChange}
         value={inputtedName}
         charLimit={24}
         label="Name"
+        containerStyles={{ margin: '0 0 1.5rem 0' }}
         autoFocus
       />
+      <Input onChange={onRoomidChange} value={roomid} label="Room ID" />
       <div className={css.floatBottom}>
         <Button
-          onclick={createGameClick}
-          text="Create Game"
+          onclick={joinGameClick}
+          text="Join Game"
           containerStyles={{ margin: '0 0 1.5rem 0' }}
         />
         <Button onclick={backClick} text="Back" />
@@ -44,4 +48,4 @@ function CreateGameView(props: PropTypes) {
   );
 }
 
-export default CreateGameView;
+export default JoinGameView;

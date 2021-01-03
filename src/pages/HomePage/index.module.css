@@ -40,14 +40,18 @@ header > h2 > a {
 
 .IntroView {
   flex-flow: column;
-  flex: 0 1 auto;
   display: flex;
   height: 100%;
 }
 
 .CreateGameView {
   flex-flow: column;
-  flex: 0 1 auto;
+  display: flex;
+  height: 100%;
+}
+
+.JoinGameView {
+  flex-flow: column;
   display: flex;
   height: 100%;
 }

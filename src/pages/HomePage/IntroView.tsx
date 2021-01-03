@@ -12,7 +12,7 @@ function IntroView(props: PropTypes) {
   }
 
   function joinGame() {
-    console.log('join game clicked');
+    props.setDisplayedView('JoinGameView');
   }
 
   function openLeaderboards() {
