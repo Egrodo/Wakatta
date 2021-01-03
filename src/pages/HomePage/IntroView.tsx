@@ -15,12 +15,13 @@ function IntroView(props: PropTypes) {
     props.setDisplayedView('JoinGameView');
   }
 
-  function openLeaderboards() {
-    console.log('Leaderboards clicked');
+  function openStats() {
+    console.log('Stats clicked');
   }
 
   function quitGame() {
     console.log('Close game clicked');
+    // window.close();
   }
 
   return (
@@ -33,8 +34,8 @@ function IntroView(props: PropTypes) {
       <Button onclick={joinGame} text="Join Game" />
       <div className={css.floatBottom}>
         <Button
-          onclick={openLeaderboards}
-          text="Leaderboards"
+          onclick={openStats}
+          text="Stats"
           containerStyles={{ margin: '0 0 1.5rem 0' }}
         />
         <Button onclick={quitGame} text="Quit" />
