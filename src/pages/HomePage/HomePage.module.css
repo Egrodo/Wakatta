@@ -1,0 +1,52 @@
+.HomePage {
+  display: flex;
+  flex-flow: column;
+  padding: var(--top-bottom-gutter) var(--side-gutter);
+  width: 100%;
+}
+
+header {
+  text-align: center;
+}
+
+header > h1 {
+  font-family: 'Product Sans';
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+header > h2 {
+  margin: 0.25rem 0 0 0;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+header > h2 > a {
+  font-style: normal;
+  text-decoration: underline;
+  color: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.content {
+  margin-top: 5rem;
+  /* Grow and shrink as necessary to fill remaining vertical space */
+  flex: 1 1 auto;
+}
+
+.btnContainer {
+  flex-flow: column;
+  flex: 0 1 auto;
+  display: flex;
+  height: 100%;
+}
+
+.bottomBtnContainer {
+  align-self: end;
+  margin-top: auto;
+  width: 100%;
+}

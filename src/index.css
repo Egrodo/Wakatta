@@ -1,10 +1,47 @@
+@font-face {
+  font-family: 'Product Sans';
+  src: local('Product Sans'),
+    url(./assets/Product\ Sans\ Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Product Sans Bold';
+  src: local('Product Sans Bold'),
+    url(./assets/Product\ Sans\ Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Product Sans Italic';
+  src: local('Product Sans Italic'),
+    url(./assets/Product\ Sans\ Italic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Product Sans Bold Italic';
+  src: local('Product Sans Bold Italic'),
+    url(./assets/Product\ Sans\ Bold\ Italic.ttf) format('truetype');
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Product Sans', -apple-system, BlinkMacSystemFont;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  color: #fff;
+  --top-bottom-gutter: 3rem;
+  --side-gutter: 2rem;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
 }

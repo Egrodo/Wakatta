@@ -1,0 +1,9 @@
+.pageContainer {
+  color: #fff;
+  max-width: 1024px;
+  min-height: 512px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
